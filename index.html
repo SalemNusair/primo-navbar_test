@@ -131,14 +131,14 @@
             #component-ouqfg section nav svg	{
                 margin: 0 42px;
               }
-            #component-ouqfg section div .signUp{
+            #component-ouqfg section div .signUp	{
                 width:	90px;
                 height:	30px;
                 color: white;
                 background-color:	blue;
                 border-radius:	5px;
               }
-            #component-ouqfg section div .logIn{
+            #component-ouqfg section div .logIn	{
                 width:	90px;
                 height:	30px;
                 color: black;
@@ -150,20 +150,20 @@
               }
             #component-ouqfg section div .toggle_button	{
                 position:	absolute;
-                right:	0;
+                right:	20px;
                 top:	0;
-                width:	30px;
-                height:	21px;
+                width:	20px;
+                height:	19px;
                 display:	none;
                 flex-direction:	column;
                 justify-content:	space-between;
               }
             #component-ouqfg section div .toggle_button span	{
-                  height:	3px;
+                  height:	4px;
                   width:	100%;
                   background-color:	black;
                 }
-          @media(max-width:	500px)	{
+          @media(max-width:	900px)	{
             #component-ouqfg section	{
               flex-direction:	column;
               font-size:	12px;
@@ -201,6 +201,18 @@
                 left:	0;
                 margin:	5px 0;
               }
+          }
+          @media(max-width:400px)	{
+                #component-ouqfg section nav a{
+                  dispaly:	none;
+                }
+                #component-ouqfg section div .close	{
+                  display:	none;
+                  margin:	0;
+                }
+                #component-ouqfg section div .toggle_button	{
+                  display:flex;
+                }
           }
       </style>
     </div>
