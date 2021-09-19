@@ -597,6 +597,19 @@ video {
   }
 }
 
+:root{
+  --main-font-size:1.25rem;
+  --header-weight:bold;
+  --main-height-line:32px;
+  --main-width:100%;
+  --main-height:64px;
+  --main-padding:8px;
+  --main-color:#2979FF;
+  --nav-background-image:url('https://i.pinimg.com/favicons/018ad5530742f084942499f82870f4316064c4dd6022ef4b4c4bb687.ico?6e27f60d0ed13633267f868a7d1b31fd');
+  --image-width:30px;
+  --image-height:30px;
+}
+
 .primo-copy {
   margin: 0 auto;
   width: 100%;
