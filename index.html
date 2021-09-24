@@ -73,27 +73,45 @@
       <div class="primo-component" id="component-ouqfg">
         <div>
           <section>
-            <nav>
-              <svg width="30" height="30" class="logo">
-                <circle
-                  cx="15"
-                  cy="15"
-                  r="10"
-                  stroke="black"
-                  stroke-width="1"
-                  fill="blue"
+            <nav class="nav-links">
+              <svg
+                width="35"
+                height="35"
+                viewBox="0 0 48 49"
+                xmlns="http://www.w3.org/2000/svg"
+                class="logo"
+              >
+                <path
+                  d="M48 24.5C48 37.7548 37.2548 48.5 24 48.5C10.7452 48.5 0 37.7548 0 24.5C0 11.2452 10.7452 0.5 24 0.5C37.2548 0.5 48 11.2452 48 24.5Z"
+                  fill="url(#paint0_linear)"
                 />
+                <defs>
+                  <linearGradient
+                    id="paint0_linear"
+                    x1="30.5"
+                    y1="12"
+                    x2="36.5"
+                    y2="33.5"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#0C43EE" />
+                    <stop offset="1" stop-color="#030D2C" stop-opacity="0.89" />
+                    <stop offset="1" stop-color="#030D2C" />
+                  </linearGradient>
+                </defs>
               </svg>
-              <a href="">Why</a>
-              <a href="">Features</a>
-              <a href="">Pricing</a>
-              <a href="">Contact</a>
+              <a class="nav-links" href="">Why</a>
+              <a class="nav-links" href="">Features</a>
+              <a class="nav-links" href="">Pricing</a>
+              <a class="nav-links" href="">Contact</a>
+
+              <button class="logIn2">Log in</button>
             </nav>
             <div>
               <button class="logIn">Log in</button>
               <button class="signUp">Sign Up</button>
               <button class="close">X</button>
-              <a class="toggle_button"
+              <a class="toggle-button"
                 ><span></span>
                 <span></span>
                 <span></span>
@@ -101,9 +119,21 @@
             </div>
           </section>
         </div>
+        <script type="module">
+                  const primo = {
+                    id: 'ouqfg',
+                    data: {"nav":[{"label":"Why","url":""},{"label":"Features","url":""},{"label":"Pricing","url":""},{"label":"Contact","url":""}]},
+                    fields: [{"id":"rynpj","key":"nav","label":"Navigation items","value":[{"label":"Why","url":""},{"label":"Features","url":""},{"label":"Pricing","url":""},{"label":"Contact","url":""}],"type":"repeater","fields":[{"id":"rlfld","key":"label","label":"Navigation label","value":"","type":"text"},{"id":"hxnka","key":"url","label":"Navigation URL","value":"","type":"url"}]}]
+                  }
+                  const toggleButton=document.getElementsByClassName("toggle-button")[0];
+
+          const navbarLinks= document.getElementsByClassName("nav-links")[0];
+          toggleButton.addEventListener("click",()=>{
+            navbarLinks.classList.toggle("active");});
+        </script>
       </div>
       <style type="text/css">
-        #component-ouqfg section{
+        #component-ouqfg section	{
             display: flex;
             justify-content: space-between;
             align-items:	center;
@@ -114,21 +144,30 @@
             font-weight:	400;
             margin:	0 auto;
             padding: 1.5rem 2rem;
+            height:	90px;
           }
-            #component-ouqfg section nav	{
+            #component-ouqfg section .nav-links	{
               display: flex;
             }
-            #component-ouqfg section nav a	{
+            #component-ouqfg section .nav-links button	{
+                display:	none;
+                width:	90px;
+                height:	30px;
+                color: black;
+                background-color:	white;
+                border-radius:	5px;
+              }
+            #component-ouqfg section .nav-links a	{
                 margin: 0 32px;
                 border-bottom: 2px solid transparent;
                 transition: border-color 0.1s;
               }
-            #component-ouqfg section nav a:hover	{
+            #component-ouqfg section .nav-links a:hover	{
                   border-color: black;
                   font-weight:	500;
                   color:	#000000;
                 }
-            #component-ouqfg section nav svg	{
+            #component-ouqfg section .nav-links svg	{
                 margin: 0 42px;
               }
             #component-ouqfg section div .signUp	{
@@ -148,17 +187,18 @@
             #component-ouqfg section div .close	{
                 display:	none;
               }
-            #component-ouqfg section div .toggle_button	{
+            #component-ouqfg section div .toggle-button	{
                 position:	absolute;
                 right:	20px;
                 top:	0;
                 width:	20px;
                 height:	19px;
+                cursor: pointer;
                 display:	none;
                 flex-direction:	column;
                 justify-content:	space-between;
               }
-            #component-ouqfg section div .toggle_button span	{
+            #component-ouqfg section div .toggle-button span	{
                   height:	4px;
                   width:	100%;
                   background-color:	black;
@@ -166,8 +206,8 @@
           @media(max-width:	900px)	{
             #component-ouqfg section	{
               flex-direction:	column;
-              font-size:	12px;
             }
+              /* font-size:	12px; */
               #component-ouqfg section nav	{
                 flex-direction:	column;
                 grid-gap:	10px;
@@ -193,7 +233,7 @@
                   top:	0;
                 }
                 #component-ouqfg section div .logIn	{
-                  display:	none;
+                  display:none;
                 }
               #component-ouqfg section svg	{
                 position:	absolute;
@@ -203,14 +243,17 @@
               }
           }
           @media(max-width:400px)	{
-                #component-ouqfg section nav a	{
+                #component-ouqfg section nav .nav-links.active{
                   display:	none;
+                }
+                #component-ouqfg section nav .logIn2.active{
+                  display:none;
                 }
                 #component-ouqfg section div .close	{
                   display:	none;
                   margin:	0;
                 }
-                #component-ouqfg section div .toggle_button	{
+                #component-ouqfg section div .toggle-button	{
                   display:flex;
                 }
           }
