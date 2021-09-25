@@ -105,7 +105,7 @@
               <a class="nav-links" href="">Pricing</a>
               <a class="nav-links" href="">Contact</a>
 
-              <button class="logIn2">Log in</button>
+              <button class="hidden-Login">Log in</button>
             </nav>
             <div>
               <button class="logIn">Log in</button>
@@ -120,54 +120,56 @@
           </section>
         </div>
         <script type="module">
-                  const primo = {
-                    id: 'ouqfg',
-                    data: {"nav":[{"label":"Why","url":""},{"label":"Features","url":""},{"label":"Pricing","url":""},{"label":"Contact","url":""}]},
-                    fields: [{"id":"rynpj","key":"nav","label":"Navigation items","value":[{"label":"Why","url":""},{"label":"Features","url":""},{"label":"Pricing","url":""},{"label":"Contact","url":""}],"type":"repeater","fields":[{"id":"rlfld","key":"label","label":"Navigation label","value":"","type":"text"},{"id":"hxnka","key":"url","label":"Navigation URL","value":"","type":"url"}]}]
-                  }
-                  const toggleButton=document.getElementsByClassName("toggle-button")[0];
-
-          const navbarLinks= document.getElementsByClassName("nav-links")[0];
-          toggleButton.addEventListener("click",()=>{
-            navbarLinks.classList.toggle("active");});
+          const primo = {
+            id: 'ouqfg',
+            data: {"nav":[{"label":"Why","url":""},{"label":"Features","url":""},{"label":"Pricing","url":""},{"label":"Contact","url":""}]},
+            fields: [{"id":"rynpj","key":"nav","label":"Navigation items","value":[{"label":"Why","url":""},{"label":"Features","url":""},{"label":"Pricing","url":""},{"label":"Contact","url":""}],"type":"repeater","fields":[{"id":"rlfld","key":"label","label":"Navigation label","value":"","type":"text"},{"id":"hxnka","key":"url","label":"Navigation URL","value":"","type":"url"}]}]
+          }
         </script>
       </div>
       <style type="text/css">
         #component-ouqfg section	{
+            /* variable */
+            --primary-font-family:"Roboto", sans-serif;
+            --max-width:1400px;
+            --primary-font-size:	18px;
+            --primary-font-weight:	400;
+            /* ---------------------- */
             display: flex;
             justify-content: space-between;
             align-items:	center;
-            max-width: 1400px;
-            font-family:	"Roboto";
-            font-size:	18px;
+            max-width: var(--max-width);
+            font-family: var( --primary-font-family);
+            font-size:	var(--primary-font-size);
             line-height:	24px;
-            font-weight:	400;
+            font-weight: var( --primary-font-weight);
             margin:	0 auto;
             padding: 1.5rem 2rem;
             height:	90px;
           }
-            #component-ouqfg section .nav-links	{
+            #component-ouqfg section nav	{
               display: flex;
             }
-            #component-ouqfg section .nav-links button	{
+            #component-ouqfg section nav button {
                 display:	none;
                 width:	90px;
                 height:	30px;
                 color: black;
                 background-color:	white;
                 border-radius:	5px;
+                margin-left:35px;
               }
-            #component-ouqfg section .nav-links a	{
+            #component-ouqfg section nav a	{
                 margin: 0 32px;
                 border-bottom: 2px solid transparent;
                 transition: border-color 0.1s;
               }
-            #component-ouqfg section .nav-links a:hover	{
+            #component-ouqfg section nav a:hover	{
                   border-color: black;
                   font-weight:	500;
                   color:	#000000;
                 }
-            #component-ouqfg section .nav-links svg	{
+            #component-ouqfg section nav svg	{
                 margin: 0 42px;
               }
             #component-ouqfg section div .signUp	{
@@ -203,16 +205,25 @@
                   width:	100%;
                   background-color:	black;
                 }
-          @media(max-width:	900px)	{
+          /* menu screen */
+          @media(max-width:	793px)	{
             #component-ouqfg section	{
               flex-direction:	column;
             }
-              /* font-size:	12px; */
               #component-ouqfg section nav	{
                 flex-direction:	column;
                 grid-gap:	10px;
                 flex:	1;
               }
+                #component-ouqfg section nav button {
+                  display:flex;
+                }
+                #component-ouqfg section nav svg	{
+                  position:	absolute;
+                  top:	0;
+                  left:	0;
+                  margin:	5px 0;
+                }
               #component-ouqfg section div	{
                 position:	absolute;
                 top:	0;
@@ -223,7 +234,6 @@
                   position:	absolute;
                   right:	70px;
                   top:	0;
-                  width:	50px;
                 }
                 #component-ouqfg section div .close	{
                   display:	flex;
@@ -235,18 +245,13 @@
                 #component-ouqfg section div .logIn	{
                   display:none;
                 }
-              #component-ouqfg section svg	{
-                position:	absolute;
-                top:	0;
-                left:	0;
-                margin:	5px 0;
-              }
           }
+          /* mobile screen */
           @media(max-width:400px)	{
-                #component-ouqfg section nav .nav-links.active{
+                #component-ouqfg section nav .nav-links{
                   display:	none;
                 }
-                #component-ouqfg section nav .logIn2.active{
+                #component-ouqfg section nav button{
                   display:none;
                 }
                 #component-ouqfg section div .close	{
