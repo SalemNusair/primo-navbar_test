@@ -1,458 +1,850 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="./styles.css" />
-  </head>
-  <body data-instant-intensity="all" class="primo-page">
-    <div class="block" id="block-bouwa">
-      <div class="primo-component" id="component-bouwa">
-        <div>
-          <section>
-            <section>
-              <h5><a href="#">AP</a></h5>
-              <nav>
-                <a href="">Projects</a>
-                <a href="">Skills</a>
-                <a href="">Contacts</a>
-                <button><a herf="#"></a></button>
-              </nav>
-            </section>
-          </section>
-        </div>
-      </div>
-      <style type="text/css">
-        #component-bouwa section {
-            font-size: var(--main-font-size);
-            height-line: --main-height-line;
-            max-width: var(--main-width);
-            max-height: var(--main-height);
-            padding: var(--main-padding);
-          }
-            #component-bouwa section h5 {
-              padding: var(--main-padding);
-              color: var(--main-color);
-              font-weight: var(--header-weight);
-            }
-            #component-bouwa section section {
-              display: flex;
-              align-items: center;
-              justify-content: space-between;
-              padding: var(--main-padding);
-            }
-            #component-bouwa section section nav a {
-                  padding: var(--main-padding);
-                  margin: var(--main-padding);
-                }
-            #component-bouwa section section nav a:hover {
-                  text-decoration: underline;
-                }
-            #component-bouwa section section nav button {
-                  background-image: var(--nav-background-image);
-                  background-size: cover;
-                  width: var(--image-width);
-                  height: var(--image-height);
-                  padding: var(--main-padding);
-                }
-          @media (max-width: 500px) {
-            #component-bouwa section {
-              flex-direction: row;
-              font-size: 0.8rem;
-              height-line: 15px;
-              padding: 4px;
-            }
-                #component-bouwa section section nav {
-                  flex-direction: row;
-                }
-          }
-      </style>
-    </div>
 
-    <div class="block" id="block-ouqfg">
-      <div class="primo-component" id="component-ouqfg">
-        <div>
-          <!-- <img style="margin:0 auto" src="https://i.imgur.com/D90EpOV.jpg" /> -->
-          <section>
-            <nav class="nav-links">
-              <svg
-                width="55"
-                height="55"
-                viewBox="0 0 48 49"
-                xmlns="http://www.w3.org/2000/svg"
-                class="logo"
-              >
-                <path
-                  d="M48 24.5C48 37.7548 37.2548 48.5 24 48.5C10.7452 48.5 0 37.7548 0 24.5C0 11.2452 10.7452 0.5 24 0.5C37.2548 0.5 48 11.2452 48 24.5Z"
-                  fill="url(#paint0_linear)"
-                />
-                <defs>
-                  <linearGradient
-                    id="paint0_linear"
-                    x1="30.5"
-                    y1="12"
-                    x2="36.5"
-                    y2="33.5"
-                    gradientUnits="userSpaceOnUse"
-                  >
-                    <stop stop-color="#0C43EE" />
-                    <stop offset="1" stop-color="#030D2C" stop-opacity="0.89" />
-                  </linearGradient>
-                </defs>
-              </svg>
-              <a class="nav-links" href="">Why</a>
-              <a class="nav-links" href="">Features</a>
-              <a class="nav-links" href="">Pricing</a>
-              <a class="nav-links" href="">Contact</a>
-
-              <button class="hidden-Login">Log in</button>
-            </nav>
-            <div>
-              <button class="button">Log in</button>
-              <button class="button primary">Sign Up</button>
-              <button class="close">
-                <svg
-                  width="20"
-                  height="20"
-                  viewBox="0 0 20 20"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M19.5347 0.465273C19.2367 0.167359 18.8326 0 18.4112 0C17.9898 0 17.5857 0.167359 17.2877 0.465273L10 7.75298L2.71229 0.465273C2.41429 0.167359 2.01016 0 1.58878 0C1.1674 0 0.763278 0.167359 0.465273 0.465273C0.167359 0.763278 0 1.1674 0 1.58878C0 2.01016 0.167359 2.41429 0.465273 2.71229L7.75298 10L0.465273 17.2877C0.167359 17.5857 0 17.9898 0 18.4112C0 18.8326 0.167359 19.2367 0.465273 19.5347C0.763278 19.8326 1.1674 20 1.58878 20C2.01016 20 2.41429 19.8326 2.71229 19.5347L10 12.247L17.2877 19.5347C17.5857 19.8326 17.9898 20 18.4112 20C18.8326 20 19.2367 19.8326 19.5347 19.5347C19.8326 19.2367 20 18.8326 20 18.4112C20 17.9898 19.8326 17.5857 19.5347 17.2877L12.247 10L19.5347 2.71229C19.8326 2.41429 20 2.01016 20 1.58878C20 1.1674 19.8326 0.763278 19.5347 0.465273Z"
-                    fill="#252428"
-                  />
-                </svg>
-              </button>
-              <a class="toggle-button"
-                ><span></span>
-                <span></span>
-                <span></span>
-              </a>
-            </div>
-          </section>
+    <!doctype html>
+    <html lang="en">
+      <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="./styles.css" />
+        
+        
+        
+      </head>
+      <body data-instant-intensity="all" class="primo-page">   
+        
+      <div class="block" id="block-bouwa">
+        <div class="primo-component" id="component-bouwa">
+          <div><section>
+  <section>
+    <h5><a href="#">AP</a></h5> 
+    <nav>
+      <a href="">Projects</a>
+      <a href="">Skills</a>
+      <a href="">Contacts</a>
+      <button><a herf="#"></a></button>
+    </nav>
+  </section>
+</section></div>
+          
         </div>
-        <script type="module">
-          const primo = {
-            id: 'ouqfg',
-            data: {"nav":[{"label":"Why","url":""},{"label":"Features","url":""},{"label":"Pricing","url":""},{"label":"Contact","url":""}]},
-            fields: [{"id":"rynpj","key":"nav","label":"Navigation items","value":[{"label":"Why","url":""},{"label":"Features","url":""},{"label":"Pricing","url":""},{"label":"Contact","url":""}],"type":"repeater","fields":[{"id":"rlfld","key":"label","label":"Label","value":"","type":"text"},{"id":"hxnka","key":"url","label":"URL","value":"","type":"url"}]}]
-          }
-        </script>
+        <style type="text/css">#component-bouwa section {
+    font-size: var(--main-font-size);
+    height-line: --main-height-line;
+    max-width: var(--main-width);
+    max-height: var(--main-height);
+    padding: var(--main-padding);
+  }
+    #component-bouwa section h5 {
+      padding: var(--main-padding);
+      color: var(--main-color);
+      font-weight: var(--header-weight);
+    }
+    #component-bouwa section section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: var(--main-padding);
+    }
+    #component-bouwa section section nav a {
+          padding: var(--main-padding);
+          margin: var(--main-padding);
+        }
+    #component-bouwa section section nav a:hover {
+          text-decoration: underline;
+        }
+    #component-bouwa section section nav button {
+          background-image: var(--nav-background-image);
+          background-size: cover;
+          width: var(--image-width);
+          height: var(--image-height);
+          padding: var(--main-padding);
+        }
+  @media (max-width: 500px) {
+    #component-bouwa section {
+      flex-direction: row;
+      font-size: 0.8rem;
+      height-line: 15px;
+      padding: 4px;
+    }
+        #component-bouwa section section nav {
+          flex-direction: row;
+        }
+  }</style>
       </div>
-      <style type="text/css">
-        #component-ouqfg section {
-            /* variable */
-            --primary-font-family: "Roboto", sans-serif;
-            --max-width: 1400px;
-            --primary-font-size: 18px;
-            --primary-font-weight: 400;
-            /* ---------------------- */
+      
+      <div class="block" id="block-ouqfg">
+        <div class="primo-component" id="component-ouqfg">
+          <div><!-- <img style="margin:0 auto" src="https://i.imgur.com/D90EpOV.jpg" /> -->
+<section>
+  <nav class="nav-links">
+    <svg
+      width="55"
+      height="55"
+      viewBox="0 0 48 49"
+      xmlns="http://www.w3.org/2000/svg"
+      class="logo"
+    >
+      <path
+        d="M48 24.5C48 37.7548 37.2548 48.5 24 48.5C10.7452 48.5 0 37.7548 0 24.5C0 11.2452 10.7452 0.5 24 0.5C37.2548 0.5 48 11.2452 48 24.5Z"
+        fill="url(#paint0_linear)"
+      />
+      <defs>
+        <linearGradient
+          id="paint0_linear"
+          x1="30.5"
+          y1="12"
+          x2="36.5"
+          y2="33.5"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stop-color="#0C43EE" />
+          <stop offset="1" stop-color="#030D2C" stop-opacity="0.89" />
+        </linearGradient>
+      </defs>
+    </svg>
+    		<a class="nav-links" href="">Why</a>
+    		<a class="nav-links" href="">Features</a>
+    		<a class="nav-links" href="">Pricing</a>
+    		<a class="nav-links" href="">Contact</a>
+
+    <button class="hidden-Login">Log in</button>
+  </nav>
+  <div>
+    <button class="button">Log in</button>
+    <button class="button primary">Sign Up</button>
+    <button class="close"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M19.5347 0.465273C19.2367 0.167359 18.8326 0 18.4112 0C17.9898 0 17.5857 0.167359 17.2877 0.465273L10 7.75298L2.71229 0.465273C2.41429 0.167359 2.01016 0 1.58878 0C1.1674 0 0.763278 0.167359 0.465273 0.465273C0.167359 0.763278 0 1.1674 0 1.58878C0 2.01016 0.167359 2.41429 0.465273 2.71229L7.75298 10L0.465273 17.2877C0.167359 17.5857 0 17.9898 0 18.4112C0 18.8326 0.167359 19.2367 0.465273 19.5347C0.763278 19.8326 1.1674 20 1.58878 20C2.01016 20 2.41429 19.8326 2.71229 19.5347L10 12.247L17.2877 19.5347C17.5857 19.8326 17.9898 20 18.4112 20C18.8326 20 19.2367 19.8326 19.5347 19.5347C19.8326 19.2367 20 18.8326 20 18.4112C20 17.9898 19.8326 17.5857 19.5347 17.2877L12.247 10L19.5347 2.71229C19.8326 2.41429 20 2.01016 20 1.58878C20 1.1674 19.8326 0.763278 19.5347 0.465273Z" fill="#252428"/>
+</svg>
+</button>
+    <a class="toggle-button"
+      ><span></span>
+      <span></span>
+      <span></span>
+    </a>
+  </div>
+</section>
+</div>
+          <script type="module">
+        const primo = {
+          id: 'ouqfg',
+          data: {"nav":[{"label":"Why","url":""},{"label":"Features","url":""},{"label":"Pricing","url":""},{"label":"Contact","url":""}]},
+          fields: [{"id":"rynpj","key":"nav","label":"Navigation items","value":[{"label":"Why","url":""},{"label":"Features","url":""},{"label":"Pricing","url":""},{"label":"Contact","url":""}],"type":"repeater","fields":[{"id":"rlfld","key":"label","label":"Label","value":"","type":"text"},{"id":"hxnka","key":"url","label":"URL","value":"","type":"url"}]}]
+        }
+        
+</script>
+        </div>
+        <style type="text/css">#component-ouqfg section {
+    /* variable */
+    --primary-font-family: "Roboto", sans-serif;
+    --max-width: 1400px;
+    --primary-font-size: 18px;
+    --primary-font-weight: 400;
+    /* ---------------------- */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: var(--max-width);
+    font-family: var(--primary-font-family);
+    font-size: var(--primary-font-size);
+    line-height: 24px;
+    font-weight: var(--primary-font-weight);
+    margin: 0 auto;
+    padding: 1.5rem 2rem;
+  }
+    #component-ouqfg section nav {
+      display: flex;
+      gap: 32px;
+    }
+    #component-ouqfg section nav button {
+        display: none;
+        background-color: white;
+        border-radius: 5px;
+        align-self: center;
+      }
+    #component-ouqfg section nav a {
+        border-bottom: 1px solid transparent;
+        transition: border-color 0.1s;
+        align-self: center;
+      }
+    #component-ouqfg section nav a:hover {
+          border-color: black;
+          font-weight: 500;
+          color: #000000;
+        }
+    #component-ouqfg section div {
+      display: flex;
+      gap: 24px;
+    }
+    #component-ouqfg section div .button {
+        border-radius: 5px;
+        padding: 10px;
+      }
+    #component-ouqfg section div .button.primary {
+          color: white;
+          background: blue;
+        }
+    #component-ouqfg section div .close {
+        display: none;
+      }
+    #component-ouqfg section div .toggle-button {
+        position: absolute;
+        right: 20px;
+        top: 0;
+        width: 20px;
+        height: 19px;
+        cursor: pointer;
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+    #component-ouqfg section div .toggle-button span {
+          height: 4px;
+          width: 100%;
+          background-color: black;
+        }
+  /* menu screen */
+  @media (max-width: 793px) {
+    #component-ouqfg section {
+      flex-direction: column;
+    }
+      #component-ouqfg section nav {
+        flex-direction: column;
+        flex: 1;
+      }
+        #component-ouqfg section nav button {
+          display: flex;
+        }
+        #component-ouqfg section nav svg {
+          position: absolute;
+          top: 1;
+          left: 0;
+          margin: 5px 10px;
+        }
+      #component-ouqfg section div {
+        position: absolute;
+        top: 1;
+        right: 0;
+        margin: 5px 0;
+        margin: 5px 10px;
+      }
+          #component-ouqfg section div .button.primary {
             display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: var(--max-width);
-            font-family: var(--primary-font-family);
-            font-size: var(--primary-font-size);
-            line-height: 24px;
-            font-weight: var(--primary-font-weight);
-            margin: 0 auto;
-            padding: 1.5rem 2rem;
+            position: absolute;
+            right: 70px;
+            top: 1;
+            width:90px;
           }
-            #component-ouqfg section nav {
-              display: flex;
-              gap: 32px;
-            }
-            #component-ouqfg section nav button {
-                display: none;
-                background-color: white;
-                border-radius: 5px;
-                align-self: center;
-              }
-            #component-ouqfg section nav a {
-                border-bottom: 1px solid transparent;
-                transition: border-color 0.1s;
-                align-self: center;
-              }
-            #component-ouqfg section nav a:hover {
-                  border-color: black;
-                  font-weight: 500;
-                  color: #000000;
-                }
-            #component-ouqfg section div {
-              display: flex;
-              gap: 24px;
-            }
-            #component-ouqfg section div .button {
-                border-radius: 5px;
-                padding: 10px;
-              }
-            #component-ouqfg section div .button.primary {
-                  color: white;
-                  background: blue;
-                }
-            #component-ouqfg section div .close {
-                display: none;
-              }
-            #component-ouqfg section div .toggle-button {
-                position: absolute;
-                right: 20px;
-                top: 0;
-                width: 20px;
-                height: 19px;
-                cursor: pointer;
-                display: none;
-                flex-direction: column;
-                justify-content: space-between;
-              }
-            #component-ouqfg section div .toggle-button span {
-                  height: 4px;
-                  width: 100%;
-                  background-color: black;
-                }
-          /* menu screen */
-          @media (max-width: 793px) {
-            #component-ouqfg section {
-              flex-direction: column;
-            }
-              #component-ouqfg section nav {
-                flex-direction: column;
-                flex: 1;
-              }
-                #component-ouqfg section nav button {
-                  display: flex;
-                }
-                #component-ouqfg section nav svg {
-                  position: absolute;
-                  top: 1;
-                  left: 0;
-                  margin: 5px 10px;
-                }
-              #component-ouqfg section div {
-                position: absolute;
-                top: 1;
-                right: 0;
-                margin: 5px 0;
-                margin: 5px 10px;
-              }
-                  #component-ouqfg section div .button.primary {
-                    display: flex;
-                    position: absolute;
-                    right: 70px;
-                    top: 1;
-                    width:90px;
-                  }
-                #component-ouqfg section div .close {
-                  display: flex;
-                  margin: 0 32px;
-                  position: absolute;
-                  right: 0;
-                  top: 1;
-                }
-                #component-ouqfg section div .button {
-                  display: none;
-                }
-          }
-          /* mobile screen */
-          @media (max-width: 400px) {
-              #component-ouqfg section nav {
-                gap: 32px;
-              }
-                #component-ouqfg section nav .nav-links {
-                  display: none;
-                }
-                #component-ouqfg section nav button {
-                  display: none;
-                }
-                #component-ouqfg section nav svg {
-                  margin-top: 10px;
-                }
-                #component-ouqfg section div .close {
-                  display: none;
-                  margin: 0;
-                }
-                #component-ouqfg section div .button {
-                  margin-top: 10px;
-                }
-                #component-ouqfg section div .toggle-button {
-                  display: flex;
-                  margin-top: 10px;
-                }
-          }
-      </style>
-    </div>
-
-    <div class="block" id="block-ezkqm">
-      <div class="primo-component" id="component-ezkqm">
-        <div>
-          <section>
-            <p class="title">See what Doulas are saying</p>
-            <div class="content">
-              <svg
-                width="33"
-                height="28"
-                viewBox="0 0 33 28"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M27 14V13.5H26.5H21.5C20.1199 13.5 19 12.3801 19 11V3C19 1.61989 20.1199 0.5 21.5 0.5H29.5C30.8801 0.5 32 1.61989 32 3V18C32 23.2489 27.7489 27.5 22.5 27.5H22C21.4449 27.5 21 27.0551 21 26.5V23.5C21 22.9449 21.4449 22.5 22 22.5H22.5C24.9824 22.5 27 20.4824 27 18V14ZM9 14V13.5H8.5H3.5C2.11989 13.5 1 12.3801 1 11V3C1 1.61989 2.11989 0.5 3.5 0.5H11.5C12.8801 0.5 14 1.61989 14 3V18C14 23.2489 9.74886 27.5 4.5 27.5H4C3.44489 27.5 3 27.0551 3 26.5V23.5C3 22.9449 3.44489 22.5 4 22.5H4.5C6.98239 22.5 9 20.4824 9 18V14Z"
-                  fill="#5D5FEF"
-                  stroke="#5D5FEF"
-                />
-              </svg>
-              <p class="article">
-                I am amazed at the training I learned so much from the training.
-                I now feel confident to face natural labor head on and help
-                other women do the same. I am thoroughly excited for the journey
-                ahead.
-              </p>
-              <p class="author">Nancy Nguyen</p>
-              <p class="position">Doula Training Graduate</p>
-              <a href="" class="next">
-                <svg
-                  width="32"
-                  height="32"
-                  viewBox="0 0 32 32"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M0.5 16C0.5 24.5625 7.4375 31.5 16 31.5C24.5625 31.5 31.5 24.5625 31.5 16C31.5 7.4375 24.5625 0.5 16 0.5C7.4375 0.5 0.5 7.4375 0.5 16ZM16 2.5C23.4188 2.5 29.5 8.50625 29.5 16C29.5 23.4188 23.4937 29.5 16 29.5C8.58125 29.5 2.5 23.4937 2.5 16C2.5 8.58125 8.50625 2.5 16 2.5ZM21.4125 16.5312L14.2188 23.7188C13.925 24.0125 13.45 24.0125 13.1562 23.7188L12.7125 23.275C12.4187 22.9812 12.4187 22.5063 12.7125 22.2125L18.9375 16L12.7188 9.78125C12.425 9.4875 12.425 9.0125 12.7188 8.71875L13.1625 8.275C13.4563 7.98125 13.9313 7.98125 14.225 8.275L21.4188 15.4625C21.7063 15.7625 21.7063 16.2375 21.4125 16.5312Z"
-                    fill="#252428"
-                  />
-                </svg>
-              </a>
-            </div>
-          </section>
-        </div>
+        #component-ouqfg section div .close {
+          display: flex;
+          margin: 0 32px;
+          position: absolute;
+          right: 0;
+          top: 1;
+        }
+        #component-ouqfg section div .button {
+          display: none;
+        }
+  }
+  /* mobile screen */
+  @media (max-width: 400px) {
+      #component-ouqfg section nav {
+        gap: 32px;
+      }
+        #component-ouqfg section nav .nav-links {
+          display: none;
+        }
+        #component-ouqfg section nav button {
+          display: none;
+        }
+        #component-ouqfg section nav svg {
+          margin-top: 10px;
+        }
+        #component-ouqfg section div .close {
+          display: none;
+          margin: 0;
+        }
+        #component-ouqfg section div .button {
+          margin-top: 10px;
+        }
+        #component-ouqfg section div .toggle-button {
+          display: flex;
+          margin-top: 10px;
+        }
+  }</style>
       </div>
-      <style type="text/css">
-        #component-ezkqm section .title{
-              font-family: Roboto;
-              font-style: normal;
-              font-weight: 500;
-              font-size: 49px;
-              line-height: 56px;
-              text-align: center;
-              letter-spacing: -0.04em;
-              color: #252428;
-              padding:20px;
-            }
-            #component-ezkqm section .content{
-              background-color:#E8E8FD;
-              display: flex;
-              flex-direction: column;
-              justify-content: center;
-              align-items: center;
-              margin:0 auto;
-              padding: 48px 35px;
-              position: static;
-              width: 745px;
-              height: 335px;
-              left: 104px;
-              top: 0px;
-              box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.04);
-              border-radius: 20px;
-            }
-            #component-ezkqm section .content svg{
-                display:flex;
-                position: relative;
-                left: 0px;
-                top: -19px;
-              }
-            #component-ezkqm section .content .article{
-                position: relative;
-                width: 675px;
-                height: 80px;
-                left: 0px;
-                top: 14px;
-                font-family: Inter;
-                font-style: normal;
-                font-weight: 500;
-                font-size: 20px;
-                line-height: 28px;
-                text-align: center;
-                letter-spacing: -0.02em;
-                color:#252428;
-              }
-            #component-ezkqm section .content .author{
-                position: relative;
-                width: 104px;
-                height: 24px;
-                left: -1px;
-                top: 42px;
-                font-family: Roboto;
-                font-style: normal;
-                font-weight: 500;
-                font-size: 16px;
-                line-height: 24px;
-                text-align: center;
-                color: #252428;
-              }
-            #component-ezkqm section .content .position{
-                position: relative;
-                width: 171px;
-                height: 24px;
-                left: 0px;
-                top: 44px;
-                font-family: Roboto;
-                font-style: normal;
-                font-weight: normal;
-                font-size: 16px;
-                line-height: 24px;
-                text-align: center;
-                color: #706E78;
-              }
-            #component-ezkqm section .content .next{
-                position: relative;
-                width: 32px;
-                height: 32px;
-                left: 459px;
-                top: -69px;
-              }
-          @media(max-width:700px){
-              #component-ezkqm section .title{
-                font-family: Roboto;
-                font-style: normal;
-                font-weight: 500;
-                font-size: 39.0625px;
-                line-height: 48px;
-                width:300px;
-              }
-              #component-ezkqm section .content{
-                width:328px;
-                height:359px;
-                padding:32px, 0px, 39px, 0px;
-                border-radius:10px;
-                text-align: center;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                padding: 0px;
-                position: static;
-                width: 328px;
-                height: 493px;
-                left: 0px;
-                top: -46.5px;
-              }
-                #component-ezkqm section .content svg{
-                  width:32px;
-                  height:28px;
-                }
-                #component-ezkqm section .content .article{
-                  display:flex;
-                  font-family: Roboto;
-                  font-style: normal;
-                  font-weight: normal;
-                  font-size: 10px;
-                  line-height: 24px;
-                  text-align: center;
-                  width:300px
-                }
-          }
-      </style>
+      
+      <div class="block" id="block-ezkqm">
+        <div class="primo-component" id="component-ezkqm">
+          <div><section>
+  <h1 class="title">See what doulas are saying</h1>
+</section>
+</div>
+          
+        </div>
+        <style type="text/css">#component-ezkqm section {
+    margin:10;
+  }
+    #component-ezkqm section .title {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 49px;
+      line-height: 56px;
+      text-align: center;
+      letter-spacing: -0.04em;
+      color: #252428;
+      padding: 20px;
+    }
+    #component-ezkqm section .doubleComma {
+      position: relative;
+      left: 0px;
+      top: -19px;
+    }
+    #component-ezkqm section .content {
+      display: flex;
+      background-color: #E8E8FD;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: static;
+      left: 104px;
+      top: 0px;
+      margin: 0 auto;
+      padding: 48px 35px;
+      width: 745px;
+      height: 335px;
+      box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.04);
+      border-radius: 20px;
+    }
+    #component-ezkqm section .content .article {
+        position: relative;
+        width: 675px;
+        height: 80px;
+        left: 0px;
+        top: 14px;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 28px;
+        text-align: center;
+        letter-spacing: -0.02em;
+        color: #252428;
+      }
+    #component-ezkqm section .content .author {
+        position: relative;
+        width: 104px;
+        height: 24px;
+        left: -1px;
+        top: 42px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        color: #252428;
+      }
+    #component-ezkqm section .content .position {
+        position: relative;
+        width: 200px;
+        height: 24px;
+        left: 0px;
+        top: 44px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        color: #706E78;
+      }
+    #component-ezkqm section .content .next {
+        position: relative;
+        width: 32px;
+        height: 32px;
+        left: 459px;
+        top: -69px;
+      }
+  @media (max-width: 700px) {
+    #component-ezkqm section {
+      width: 350px;
+      align-item: center;
+      margin: 0 auto;
+    }
+      #component-ezkqm section .title {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 39.0625px;
+        line-height: 48px;
+        width: 300px;
+        text-align: center;
+        self-align: center;
+      }
+      #component-ezkqm section .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        position: static;
+        width: 328px;
+        height: 400px;
+        left: 0px;
+        top: -46.5px;
+        width: 328px;
+        height: 359px;
+        padding: 32px, 0px, 39px, 0px;
+        border-radius: 10px;
+        text-align: center;
+      }
+        #component-ezkqm section .content svg {
+          position: relative;
+          left: 0px;
+          top: -80px;
+          width: 32px;
+          height: 28px;
+        }
+        #component-ezkqm section .content .article {
+          display: flex;
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: normal;
+          line-height: 24px;
+          text-align: center;
+          width: 300px;
+          position: relative;
+          left: 0px;
+          top: -60px;
+        }
+        #component-ezkqm section .content .author {
+          position: relative;
+          left: 0px;
+          top: 50px;
+        }
+        #component-ezkqm section .content .position {
+          position: relative;
+          top: 50px;
+        }
+        #component-ezkqm section .content .next {
+          position: relative;
+          left: 140px;
+          top:150px;
+        }
+  }</style>
+      </div>
+      
+      <div class="block" id="block-gyxfs">
+        <div class="primo-component" id="component-gyxfs">
+          <div><section>
+<div>
+  <h5>Ready to become a Doula?</h5>
+</div>
+<div>
+  <span>Read more about what it means to be a doula or contact us with your questions</span>
+</div>
+<div class="btns">
+  <button>
+    <a href="" >Learn More</a>
+  </button>
+  <button>
+    <a href="" >Contact</a>
+  </button>
+</div>
+</section></div>
+          
+        </div>
+        <style type="text/css">#component-gyxfs {
+  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+}
+  #component-gyxfs section {
+    background-color: #7879F1;
+    display: grid;
+    grid-auto-flow: row;
+    justify-content: center;
+    margin: 3rem auto;
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding: auto 2rem;
+    font-family: 'Roboto', sans-serif;
+  }
+  #component-gyxfs section div:nth-child(1){
+      padding-bottom: 1rem;
+      padding-top: 4rem;
+      font-size: 3.6rem;
+    }
+  #component-gyxfs section div:nth-child(2){
+      font-size: 1.25rem;
+      font-weight: 300;
+    }
+  #component-gyxfs section .btns {
+      padding-top: 1rem;
+      padding-bottom: 3rem;
+    }
+  #component-gyxfs section .btns button:first-child{
+        border-width: 3px;
+        border-radius: 84px;
+        padding: 0.5rem 1rem;
+        margin-right: 1.3rem;
+      }
+  #component-gyxfs section .btns button:nth-child(2){
+        background-color: #171AE8;
+        color: #FFFFF;
+        border-radius: 40px;
+        padding: 0.5rem 2rem;
+      }
+  #component-gyxfs section a {
+      font-size: 23px;
+      font-weight: 400;
+      color: #FFFFFF;
+    }</style>
+      </div>
+      
+      <div class="block" id="block-jtfwy">
+        <div class="primo-component" id="component-jtfwy">
+          <div><section>
+  <div>
+    <img src="https://i.imgur.com/4Wd7sNm.png" />
+  </div>
+  <nav class="nav-items">
+    <a class="nav-link" href="">Home</a>
+    <a class="nav-link" href="">About</a>
+    <a class="nav-link" href="">Training</a>
+    <a class="nav-link" href="">Resources</a>
+    <a class="nav-link" href="">Doula Hub</a>
+    <div class="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
     </div>
-  </body>
-</html>
+  </nav>
+  <button>Contact</button>
+</section>
+</div>
+          <script type="module">
+        const primo = {
+          id: 'jtfwy',
+          data: {"nav":[{"label":"Home"},{"label":"About"},{"label":"Training"},{"label":"Resources"},{"label":"Doula Hub"}],"contact":"Contact","logo":{"url":"https://i.imgur.com/4Wd7sNm.png","alt":"","size":null}},
+          fields: [{"id":"fdyet","key":"nav","label":"Site Navigation bar","value":[{"label":"Home"},{"label":"About"},{"label":"Training"},{"label":"Resources"},{"label":"Doula Hub"}],"type":"repeater","fields":[{"id":"kypwr","key":"label","label":"Site Navigation Item","value":"","type":"text"}]},{"id":"tligf","key":"contact","label":"Contact Button","value":"Contact","type":"text","fields":[]},{"id":"ihvcn","key":"logo","label":"Logo","value":{"url":"https://i.imgur.com/4Wd7sNm.png","alt":"","size":null},"type":"image","fields":[]}]
+        }
+        const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-items");
+
+hamburger.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+  hamburger.classList.toggle("active");
+  navMenu.classList.toggle("active");
+}
+const navLink = document.querySelectorAll(".nav-link");
+
+navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+function closeMenu() {
+  hamburger.classList.remove("active");
+  navMenu.classList.remove("active");
+}</script>
+        </div>
+        <style type="text/css">#component-jtfwy section {
+    width: 100%;
+    padding: 1.5rem 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    place-items: center;
+    justify-content: space-between;
+  }
+    #component-jtfwy section nav {
+      margin-left: 2rem;
+    }
+    #component-jtfwy section button {
+      background-color: #5D5FEF;
+      color: #FFF;
+      padding: 0.4rem 1.2rem;
+      border-radius: 1.5rem;
+      font-size: 16px;
+      margin-right: 1rem;
+    }
+    #component-jtfwy section a {
+      color: var(--color-text);
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.1s;
+      font-size: 18px;
+      margin-left: 1rem;
+      font-weight: 400;
+      margin-right: 14px;
+      font-family: var(--ff-main);
+    }
+    #component-jtfwy section a:hover {
+      border-bottom: 1px solid;
+      color: var(--hover-text-color);
+    }
+    #component-jtfwy section .hamburger {
+      display: none;
+    }
+    #component-jtfwy section .bar {
+      display: block;
+      width: 25px;
+      height: 3px;
+      margin: 5px auto;
+      transition: all 0.3s ease-in-out;
+      background-color: #101010;
+    }
+  @media (max-width: 768px) {
+    #component-jtfwy section {
+      justify-content: center;
+      justify-content: space-between;
+    }
+      #component-jtfwy section .nav-items {
+        position: absolute;
+        top: 5.5rem;
+        right: 40%;
+        display: grid;
+        border-radius: 10px;
+        transition: 0.3s;
+      }
+        #component-jtfwy section .nav-items a {
+          margin: 1px auto;
+          font-weight: 300;
+        }
+        #component-jtfwy section .nav-items a:last-child {
+          margin: 1rem auto;
+        }
+      #component-jtfwy section .nav-items.active {
+        left: 100%;
+      }
+      #component-jtfwy section nav > a {
+        margin: 1rem 0;
+      }
+      #component-jtfwy section .hamburger {
+        display: block;
+        cursor: pointer;
+        position: fixed;
+        top: 2rem;
+        right: 0.4rem;
+      }
+      #component-jtfwy section .hamburger.active span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+      }
+      #component-jtfwy section hamburger.active span:nth-child(2) {
+        display: none !important;
+        position: absolute;
+        left: 100%;
+      }
+      #component-jtfwy section .hamburger.active span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+      }
+  }</style>
+      </div>
+      
+      <div class="block" id="block-pohxv">
+        <div class="primo-component" id="component-pohxv">
+          <div><section>
+  <div class="slides">
+    <h1>heloo world</h1>
+    <h1>Helloe every one welcome to the real world</h1>
+  </div>
+  <div class="slides">
+    <h1>Hey</h1>
+    <h1>How are you</h1>
+  </div>
+</section></div>
+          
+        </div>
+        
+      </div>
+      
+      <div class="block" id="block-ejigg">
+        <div class="primo-component" id="component-ejigg">
+          <div><section>
+  <h1 class="title"></h1>
+  <div class="content">
+     <svg
+      class="doubleComma"
+      width="33"
+      height="28"
+      viewBox="0 0 33 28"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M27 14V13.5H26.5H21.5C20.1199 13.5 19 12.3801 19 11V3C19 1.61989 20.1199 0.5 21.5 0.5H29.5C30.8801 0.5 32 1.61989 32 3V18C32 23.2489 27.7489 27.5 22.5 27.5H22C21.4449 27.5 21 27.0551 21 26.5V23.5C21 22.9449 21.4449 22.5 22 22.5H22.5C24.9824 22.5 27 20.4824 27 18V14ZM9 14V13.5H8.5H3.5C2.11989 13.5 1 12.3801 1 11V3C1 1.61989 2.11989 0.5 3.5 0.5H11.5C12.8801 0.5 14 1.61989 14 3V18C14 23.2489 9.74886 27.5 4.5 27.5H4C3.44489 27.5 3 27.0551 3 26.5V23.5C3 22.9449 3.44489 22.5 4 22.5H4.5C6.98239 22.5 9 20.4824 9 18V14Z"
+        fill="#5D5FEF"
+        stroke="#5D5FEF"
+      />
+    </svg>
+
+
+    <p class="article">I am amazed at the training I learned so much from the training. I now feel confident to face natural labor head on and help other women do the same. I am thoroughly excited for the journey ahead.</p>
+    <p class="author">Nancy Nguyen</p>
+    <p class="position">Digital Designer at Instacart</p>
+
+    <a href="" class="next">
+      <img
+        src="https://img.pngio.com/next-icon-of-line-style-available-in-svg-png-eps-ai-icon-fonts-next-icon-png-256_256.png"
+      />
+  </div>
+</section>
+</div>
+          
+        </div>
+        <style type="text/css">#component-ejigg section {
+    margin:10;
+  }
+    #component-ejigg section .title {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 49px;
+      line-height: 56px;
+      text-align: center;
+      letter-spacing: -0.04em;
+      color: #252428;
+      padding: 20px;
+    }
+    #component-ejigg section .doubleComma {
+      position: relative;
+      left: 0px;
+      top: -19px;
+    }
+    #component-ejigg section .content {
+      display: flex;
+      background-color: #E8E8FD;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: static;
+      left: 104px;
+      top: 0px;
+      margin: 0 auto;
+      padding: 48px 35px;
+      width: 745px;
+      height: 335px;
+      box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.04);
+      border-radius: 20px;
+    }
+    #component-ejigg section .content .article {
+        position: relative;
+        width: 675px;
+        height: 80px;
+        left: 0px;
+        top: 14px;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 28px;
+        text-align: center;
+        letter-spacing: -0.02em;
+        color: #252428;
+      }
+    #component-ejigg section .content .author {
+        position: relative;
+        width: 104px;
+        height: 24px;
+        left: -1px;
+        top: 42px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        color: #252428;
+      }
+    #component-ejigg section .content .position {
+        position: relative;
+        width: 200px;
+        height: 24px;
+        left: 0px;
+        top: 44px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        color: #706E78;
+      }
+    #component-ejigg section .content .next {
+        position: relative;
+        width: 32px;
+        height: 32px;
+        left: 459px;
+        top: -69px;
+      }
+  @media (max-width: 700px) {
+    #component-ejigg section {
+      width: 350px;
+      align-item: center;
+      margin: 0 auto;
+    }
+      #component-ejigg section .title {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 39.0625px;
+        line-height: 48px;
+        width: 300px;
+        text-align: center;
+        self-align: center;
+      }
+      #component-ejigg section .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        position: static;
+        width: 328px;
+        height: 400px;
+        left: 0px;
+        top: -46.5px;
+        width: 328px;
+        height: 359px;
+        padding: 32px, 0px, 39px, 0px;
+        border-radius: 10px;
+        text-align: center;
+      }
+        #component-ejigg section .content svg {
+          position: relative;
+          left: 0px;
+          top: -80px;
+          width: 32px;
+          height: 28px;
+        }
+        #component-ejigg section .content .article {
+          display: flex;
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: normal;
+          line-height: 24px;
+          text-align: center;
+          width: 300px;
+          position: relative;
+          left: 0px;
+          top: -60px;
+        }
+        #component-ejigg section .content .author {
+          position: relative;
+          left: 0px;
+          top: 50px;
+        }
+        #component-ejigg section .content .position {
+          position: relative;
+          top: 50px;
+        }
+        #component-ejigg section .content .next {
+          position: relative;
+          left: 140px;
+          top:150px;
+        }
+  }</style>
+      </div>
+      
+        
+        
+      </body>
+    </html>
+  
